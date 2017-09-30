@@ -8,3 +8,7 @@ body {
 table.text-left td {
 	text-align: left;
 }
+
+table td.text-center{
+	text-align: center;
+}

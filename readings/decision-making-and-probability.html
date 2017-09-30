@@ -33,7 +33,7 @@
     Making decisions is about choosing the options that leads to the outcome with the highest total value.
     In business scenarios one might predict a dollar amount for the value for each possible outcome.
     In a personal or other scenario one might imagine how much something is worth in dollars and use that as a value (or otherwise use numbers to express how much one wants an outcome);
-    note that this is potentially error-prone / inappropriate, but let’s (potentially dangerously) assume someone takes the time to carefully consider how much that outcome is worth to them and gives it a dollar amount.
+    note that this is potentially error-prone / inappropriate, but let's (potentially dangerously) assume someone takes the time to carefully consider how much that outcome is worth to them and gives it a dollar amount.
 </p>
 
 <h3>When each choice has a certain outcome</h3>
@@ -41,6 +41,207 @@
     In this case, you look at the outcomes and choose the choice that has the highest valued outcome.
     For example, on my way to class I walk by someone selling chocolate. I might consider this decision quickly as:
 </p>
+
+<table class="table table-striped text-left">
+    <tr>Table 1: Value given choice</tr>
+    <tr>
+        <td><b>Choice</b></td>
+        <td><b>Outcome</b></td>
+        <td><b>Value</b></td>
+    </tr>
+    <tr>
+        <td>Buy chocolate</td>
+        <td>I eat chocolate</td>
+        <td>"+$10" in happiness</td>
+    </tr>
+    <tr>
+        <td>Do not buy chocolate</td>
+        <td>I do not eat chocolate</td>
+        <td>$0</td>
+    </tr>
+</table>
+
+<p>
+    With this way of describing the choice, choosing to buy chocolate will lead to a higher-value outcome - a benefit "equivalent" to $10 from eating chocolate. Why $10? Well I just really like chocolate and I think I will be about as happy as if I had found $10 on the ground. Thus, choosing buy chocolate would optimize my potential value from the decision (gain $10 in value vs. gain $0).
+</p>
+
+<h3>When each choice also has a cost</h3>
+
+<p>
+    As I go to buy the chocolate, I realize the chocolate costs money - $5. I reconsider my values for each outcome, subtracting the costs of making that choice.
+</p>
+
+<table class="table table-striped text-left">
+    <tr>Table 2: Value given choice and costs</tr>
+    <tr>
+        <td><b>Choice</b></td>
+        <td><b>Outcome</b></td>
+        <td><b>Value</b></td>
+    </tr>
+    <tr>
+        <td>Buy chocolate</td>
+        <td>I eat chocolate</td>
+        <td>+$10 (in happiness) - $5 (cost) = +$5 net benefit</td>
+    </tr>
+    <tr>
+        <td>Do not buy chocolate</td>
+        <td>I do not eat chocolate</td>
+        <td>$0</td>
+    </tr>
+</table>
+
+<p>
+    Buy chocolate still has the highest valued outcome at $5, so I reach for my wallet. However, I suddenly realize I'm not so sure there's only one possible outcome from that choice.
+
+    When there are many possible outcomes that are unknown / uncertain
+    Really, most decisions in life do not have a guaranteed outcome. Each choice can have multiple possible outcomes. In our example we'll add another possible outcome.
+
+    Looking over the person selling chocolate, I realize I don't know them, I haven't seen them before, and they are wearing a strange costume. I add a new outcome (I leave the value entry blank if that outcome cannot happen for that choice).
+
+</p>
+
+<table class="table table-striped text-left">
+    <tr>Table 3: Value given choices with uncertain outcomes</tr>
+    <tr>
+        <td></td>
+        <td colspan="3" class="text-center">Outcomes</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><b>Eat nothing</b></td>
+        <td><b>Eat chocolate</b></td>
+        <td><b>Eat poisoned chocolate, go to hospital</b></td>
+    </tr>
+    <tr>
+        <td>Choice: Buy chocolate</td>
+        <td>n/a</td>
+        <td>+$10 (happiness) - $5 (cost) = $5 (net benefit)</td>
+        <td>-$1000 (hospital) - $5 (chocolate) = -$1005 (net benefit)</td>
+    </tr>
+    <tr>
+        <td>Choice: Do not buy chocolate</td>
+        <td>$0</td>
+        <td>n/a</td>
+        <td>n/a</td>
+    </tr>
+</table>
+
+<p>
+    Now that there are multiple outcomes, there are different rules I might use to decide. Here are two fairly extreme rules:
+</p>
+
+Decision Rules:
+<ul>
+    <li><b>Minimize the worst possible outcome</b>: Take the worst outcome for each choice, then choose the choice with the best (of the worst) outcomes.</li>
+    <li><b>Maximize the best possible outcome</b>: Take the best outcome for each choice, then choose the choice with the best (of the best) outcomes.</li>
+</ul>
+
+<p>
+    For minimize the worst possible outcome, I'd choose to not buy chocolate.
+    To maximize the best possible outcome, I'd choose to buy the chocolate.
+</p>
+
+<h3>When you're biased and inadvertently change your analysis to get the choice you want</h3>
+
+<p>
+    Now, the thought occurs to me, that maybe I'll eat half of the chocolate, meet someone that looks hungry on the way, 
+    share my chocolate, start up a wonderful conversation, one thing leads to another, and - fast forward 10 years into the future 
+    - we're a happy couple and life is awesome. I add a new outcome to my decision table.
+</p>
+
+<table class="table table-striped text-left">
+    <tr>Table 4: Value given choices with uncertain outcomes</tr>
+    <tr>
+        <td></td>
+        <td colspan="4" class="text-center">Outcomes</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><b>Eat nothing</b></td>
+        <td><b>Eat chocolate</b></td>
+        <td><b>Eat poisoned chocolate, go to hospital</b></td>
+        <td><b>Share chocolate with my future partner</b></td>
+    </tr>
+    <tr>
+        <td>Choice: Buy chocolate</td>
+        <td>n/a</td>
+        <td>+$10 (happiness) - $5 (chocolate) = $5 (net benefit)</td>
+        <td>-$1000 (hospital) - $5 (chocolate) = -$1005 (net benefit)</td>
+        <td>$10,000,000 (happiness) - $5 (cost) = $9,999,995 (net benefit)</td>
+    </tr>
+    <tr>
+        <td>Choice: Do not buy chocolate</td>
+        <td>$0</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+    </tr>
+</table>
+
+<p>
+    Now, the two decision rules from before seems really unsatisfactory.
+    If I try to, I can probably think about extreme outcomes (bad or good) for any choice I make,
+    which can heavily influence the choice I "should" make based on those rules.
+</p>
+
+<h2>Expressing belief with probability</h2>
+<p>
+    Play this game to get a feel for subjectively expressing belief as a probability distribution
+    <a href="http://cassandraxia.com/projs/advbiases/" target="_blank">Adventures in Cognitive Biases</a>
+</p>
+
+<h2>Decision theory</h2>
+<p>
+    Decision theory combines the choices-outcomes-values model of a decision along with a probability distribution of the outcomes for each choice.
+    Practitioners of orthodox (prevalent / accepted) decision theory recommend one choose the choice that has the highest "expected" value, adjusted for the probability of that outcome. For example, for the decision below with the following probabilities:
+</p>
+
+<table class="table table-striped text-left">
+    <tr>Table 5: Probability table for chocolate outcomes</tr>
+    <tr>
+        <td><b>Choice</b></td>
+        <td><b>Outcome</b></td>
+        <td><b>Probability</b></td>
+    </tr>
+    <tr>
+        <td>Buy chocolate</td>
+        <td>Eat chocolate</td>
+        <td>0.99</td>
+    </tr>
+    <tr>
+        <td>Buy chocolate</td>
+        <td>Eat poisoned chocolate</td>
+        <td>0.009999</td>
+    </tr>
+    <tr>
+        <td>Buy chocolate</td>
+        <td>Share chocolate with future partner</td>
+        <td>0.000001</td>
+    </tr>
+    <tr>
+        <td>Buy chocolate</td>
+    </tr>
+</table>
+
+<p>
+    We can make our decision by first calculating our expected outcome, the product of the value of each outcome with the likelihood of it occuring.
+    <math>1+1</math>
+</p>
+
+<p>
+    Decision analysis without probability can change based on unlikely or extreme outcomes.
+    In general, it can be hard to define all the possible outcomes; decision analysis tends to just focus on some set of outcomes.
+    Some people in the decision analysis community try to come up with ways to deal with possible outcomes, this but limiting outcomes is a fundamental limitation of the method.
+    In the end, it's hard to tell if you have included all the possible choices and possible outcomes that matter in an analysis.
+</p>
+
+<h2>Further Reading</h2>
+
+<p>
+    <i>Dutch book</i> arguments: If you don't use fair rules, someone can trick you into buying bets that you can't ever profit from.
+
+</p>
+<p id="cherubini">Cherubini, M., Venolia, G., DeLine, R., & Ko, A. J. (2007, April). <a href="https://doi.org/10.1145/1240624.1240714">Let's go to the whiteboard: how and why software developers use drawings</a>. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 557-566).</p>
 
 </body>
 
