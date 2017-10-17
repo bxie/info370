@@ -5,17 +5,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="style.css" />
 
-	<title>INFO 370 Introduction to Data Science</title>
+		<link rel="icon"
+			  type="image/png"
+			  href="images/icon.png">
+
+		<title>INFO 370 Introduction to Data Science</title>
+
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106917583-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments)};
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-106917583-1');
+		</script>
+
 
 	</head>
 	<body>
@@ -25,7 +40,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 	
-					<img src="images/tessellation.jpg" class="img-responsive" />
+					<img src="images/world.png" class="img-responsive" />
 					
 					<h1>INFO 370: Introduction to Data Science</h1>
 
@@ -52,10 +67,13 @@
 						<a href="#homework">Individual Homework</a>
 						&bull;
 						<a href="#project">Project</a>
+						&bull;
+						<a href="#resources">Resources</a>
 					</p>
 					
 					<p>In this class you'll learn how to think like a data scientist. You'll learn what data scientists do and how they do it. You'll also learn about the contexts in which a data scientist exists. By the end of the course, you should be able to enter any organization and begin to understand the social and technical contexts in which you help make decisions. If you want to be a great data scientist, this is the course for you.</p>
 
+					Learning objectives for the course:
 					<ol>
 						<li>Comprehend the practice of data science as an interactive, iterative process.</li>
 						<li>Critique the quality of data, models, and results within a decision context.</li>
@@ -86,9 +104,9 @@
 					<p>The prerequisite course, INFO 201 (the Technical Foundations of Informatics), should be suitable preparation for the above. Refer to the <a target="_blank" href="https://info201.github.io/">INFO 201 online book</a> to refresh your knowledge of the course.</p>
 						
 					<!-- QUARTERLY -->
-					<h2>Office Hours</h2>
+					<h2 id="office-hours">Office Hours</h2>
 					
-					<p>We are available to talk about jobs, careers, graduate school, research, class, taboos, and anything else. Benji's office hours this quarter are <b>Monday and Wednesday 9-11 am in MGH-015</b>, though occasionally we need to schedule things over it. To guarantee we'll be around, write to us in advance to secure a time.</p>
+					<p>We are available to talk about jobs, careers, graduate school, research, class, taboos, and anything else. Benji's office hours this quarter are <b>Monday and Tuesday 9-10:30 am in MGH-015</b> (door is locked, so just knock to get in). Greg's office hours this quarter are <b>Wednesday 2-3:20 and Thursday 1-3PM in CSE atrium tables</b>. Occasionally we need to schedule things over it. To guarantee we'll be around, write to us in advance to secure a time.</p>
 					
 					<h2>Devices in Class</h2>
 					
@@ -98,10 +116,11 @@
 					<h2 id="schedule">Typical Week</h2>
 					
 					<ul>
-					    <li>How to use a scripting language (R, Python) to manipulate data</li>
-					    <li>How to use command line</li>
-					    <li>How to use Git and GitHub</li>
-						<li>How to access a Web API</li>
+						<li>Sunday: Do reading assignments (read readings, review and run scripts). Complete reflection survey.</li>
+						<li>Monday: Go to class and participate. After class, report struggles online.</li>
+						<li>Tuesday:Do reading assignments (read readings, review and run scripts). Complete reflection survey.</li>
+						<li>Wednesday: Go to class and participate. After class, report struggles online.</li>
+						<li>Wednesday-Saturday: Homework or group project work</li>
 					</ul>
 
 					<h2 id="schedule">Schedule</h2>
@@ -115,11 +134,12 @@
 							<td>
 								Data science is a process
 								<ul>
-									<li><a href="#">Welcome</a> (10 min)</li> <!-- I'm experienced -->
-									<li>Activity (40 min): <a href="#">Investigating a disease outbreak</a></li>
-									<li>Discussion (30 min): <a href="#">Data science is a process</a></li>
+									<li><a href="https://docs.google.com/presentation/d/1u20j2Vc70oeeUd7Cq_6Xm21PrI5H_b79frDZozoaaL0/edit?usp=sharing" target="_blank">Welcome</a> (10 min)</li> <!-- I'm experienced -->
+									<li>Activity (40 min): Investigating a disease outbreak</li>
+									<li>Discussion (30 min): <a href="class/data-science-process.html">Data science is a process</a></li>
 									<li>Review this syllabus (20 min)</li>
 								</ul>
+								Assigned: <a href="homeworks/review-prerequisite.html">Homework 1</a>. Due Fri 10/6.
 							</td>
 						</tr>
 							
@@ -127,14 +147,12 @@
 	
 						<tr>
 							<!-- QUARTERLY -->
-							<td>10/2</td><td>Lecture</td> <!--TODO: Fix all dates-->
+							<td>10/2</td><td>Lecture</td>
 							<td>
 								Decision-making and Probability
 								<ul>
-									<li>Reading: <a href="">Probability</a></li>
-                  <!--									<li><a href="https://docs.google.com/a/uw.edu/presentation/d/1iMX_Q-yQooYkkLZMiOn80h-8tO82TI1Z0f-VdK1DWDo/edit?usp=sharing">Welcome</a> (10 min)</li> <!-- I'm experienced --> 
-                  <!--									<li>Review this syllabus (20 min)</li> -->
-                  <!--									<li>Activity (40 min): <a href="activities/situating-software-organizations.html">Situating software organizations</a></li> -->
+									<li>Reading: <a href="https://docs.google.com/document/d/1GiQUL71Iv2iGEe5hRy5yxTNQijA-fpWV9qcJucbwPVc/edit?usp=sharing" target="_blank">Decision-theory and Probability</a></li>
+									<li><a href="https://docs.google.com/presentation/d/150DcoqEa2jguO9O06tuMyBt-xQaXRXMuK5LoDVLiQGs/edit?usp=sharing" target="_blank">Slides</a></li>
 								</ul>
 							</td>
 						</tr>
@@ -142,9 +160,9 @@
 							<!-- QUARTERLY -->
 							<td>10/2</td><td>Lab</td>
 							<td>
-                Automating data science process with an R script
+                				Automating data science process with an R script
 								<ul>
-                  <!--									<li>Activity (50 min): <a href="activities/self-regulation.html">Great engineers are self-regulating</a></li> -->
+									<li>Code: <a href="https://github.com/info370/fa17-labs/tree/master/labs/1_2" target="_blank"> Exploring data on crimes near UW campus</a></li>
 								</ul>
 							</td>
 						</tr>
@@ -152,12 +170,12 @@
 							<!-- QUARTERLY -->
 							<td>10/4</td><td>Lecture</td>
 							<td>
-                Decision contexts in data science
+								Decision contexts in data science
 								<ul>
-                  <!--									<li>Lab discussion (5 min)</li> -->
-                  									<li>Reading: <a href="../books/cooperative-software-development/organizations.html">Data science case studies</a></li> 
-                  <!--									<li>Homework 1 (80 min): <a href="homeworks/design-your-organization.html">Design your organization</a></li> -->
+									<li>Reading: <a href="https://docs.google.com/document/d/1vkf7mQu4x5LIPVNiZsgBIdeAWRkBBnj5JaZquvooB6g/edit?usp=sharing" target="_blank">Challenges and Directions of Data Science</a></li>
+									<li><a href="https://docs.google.com/presentation/d/1zlUZv-OLpekA9U9Sd48lGinuHNK0vPND4JWVKbiC7LE/edit?usp=sharing" target="_blank">Slides</a></li>
 								</ul>
+								Assigned: <a href="homeworks/case-study-analysis.html">Homework 2</a>. Due <del>Tues 10/10</del> <b>Fri 10/13</b> (updated).
 							</td>
 						</tr>
 	
@@ -167,10 +185,10 @@
 							<!-- QUARTERLY -->
 							<td>10/9</td><td>Lecture</td>
 							<td>
-                Modeling as deciding among models <!--to optimize something-->
+                Building Bayesian Models <!--to optimize something-->
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/communication.html">Models</a></li>
-                  <!--									<li>Activity (80 min): <a href="activities/communication.html">Communication setup</a></li> -->
+									<li>Reading: <a href="https://docs.google.com/document/d/1daYaEaAo7AVqxITspemGKoJTcundjWoJH8e_CkskMN4/edit?usp=sharing" target="_blank">Probability Models</a></li>
+									<li>Slides: <a href="https://docs.google.com/presentation/d/1RQQslLK2sxqh-GaFEMZ4ibn1Tp5kK4I-FbLQMJFokEE/edit?usp=sharing" target="_blank">Building Bayesian Models</a></li>
 								</ul>
 							</td>
 						</tr>
@@ -178,9 +196,9 @@
 							<!-- QUARTERLY -->
 							<td>10/9</td><td>Lab</td>
 							<td>
-                Computing probability of data assuming a model; Bootstrapping distribution
+                				Running Statistical Models
 								<ul>
-                  <!--									<li>Activity: <a href="activities/open-minded.html">Great engineers are open-minded</a></li> -->
+									<li><a href="https://github.com/info370/fa17-labs/tree/master/labs/2_2" target="_blank">Code</a></li>
 								</ul>
 							</td>
 						</tr>
@@ -190,11 +208,9 @@
 							<td>
                 Improving modeling decisions using Baye's rule
 								<ul>
-                  <!--									<li>Homework 1 due</li> -->
-                  <!--									<li>Lab discussion (5 min)</li> -->
-									<li>Reading: <a href="../books/cooperative-software-development/productivity.html">Conditional Probability</a></li>
-                  <!--									<li>Homework 2 (80 min): <a href="homeworks/design-specification.html">Design specification</a></li> -->
+									<li>Reading: <a href="https://docs.google.com/document/d/1JVacsJzMCG4tp0TTnEGV8Mb8vcc2vgS9z_EQzj9B0sU/edit?usp=sharing" target="_blank">Inferring probability distributions from data</a></li>
 								</ul>
+								Assigned: <a href="homeworks/bayesian.html">Homework 3</a>. Due Tues 10/17.
 							</td>
 						</tr>
 	
@@ -204,9 +220,9 @@
 							<!-- QUARTERLY -->
 							<td>10/16</td><td>Lecture</td>
 							<td>
-                Data cleaning process
+                Bayesian Inference in Action, Data cleaning process
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/quality.html">Data cleaning</a></li>
+									<li>Reading: (None)</li>
                   <!--									<li>Activity (80 min): <a href="activities/rank-qualities.html">Rank qualities</a></li> -->
 								</ul>
 							</td>
@@ -230,8 +246,8 @@
                   <!--									<li>Homework 2 due</li> -->
                   <!--									<li>Lab discussion (5 min)</li> -->
                   <li>Reading: <a href="https://docs.google.com/a/uw.edu/document/d/1mM0hs3UCgcKxcNAIirM6Ikl24W6MaHDf9IliweTdKTo/edit?usp=sharing">Types of data</a></li> <!-- in organizations -->
-                  <!--									<li>Homework 3 (80 min): <a href="homeworks/requirements.html">Requirements specification</a></li> -->
 								</ul>
+								Assigned: <a href="#project">Project Milestone 1: Group formation & initial questions</a>. Due Sun 10/22.
 							</td>
 						</tr>
 	
@@ -243,9 +259,10 @@
 							<td>
                 Collecting data from the internet
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/architecture.html">Web scraping</a></li>	
+									<li>Reading: Web scraping</li>
                   <!--									<li>Activity (80 min): <a href="activities/requirements.html">Requirements planning</a></li> -->
 								</ul>
+								Assigned: <a href="#project">Project Milestone 2: Feasibility Analysis</a>. Due Sun 10/29.
 							</td>
 						</tr>
 						<tr>
@@ -266,7 +283,7 @@
 								<ul>
                   <!--									<li>Homework 3 due</li> -->
                   <!--									<li>Lab discussion (5 min)</li> -->
-									<li>Reading: <a href="../books/cooperative-software-development/specifications.html">Exploring Paroles</a></li>
+									<li>Reading: Exploring Paroles</li>
                   <!--									<li>Homework 4 (50 min): <a href="homeworks/architecture.html">Architectural Specification</a></li> -->
 								</ul>
 							</td>
@@ -280,9 +297,10 @@
 							<td>
                 Visualization design
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/process.html">Visualizations: the good, the bad, and the ugly</a></li>
+									<li>Reading: Visualizations: the good, the bad, and the ugly</li>
                   <!--									<li>Activity (80 min): <a href="activities/schedule.html">Schedule</a></li> -->
 								</ul>
+								Assigned: <a href="#project">Project Milestone 3: Project Proposal</a>. Due Sun 11/5.
 							</td>
 						</tr>
 						<tr>
@@ -303,7 +321,7 @@
 								<ul>
                   <!--									<li>Homework 4 due</li> -->
                   <!--									<li>Lab discussion (5 min)</li> -->
-									<li>Reading: <a href="../books/cooperative-software-development/comprehension.html">Expressing Optimization Goals</a></li>
+									<li>Reading: Expressing Optimization Goals</li>
                   <!--									<li>Homework 5 (50 min): <a href="homeworks/process.html">Process</a></li> -->
 								</ul>
 							</td>
@@ -317,9 +335,10 @@
 							<td>
                 Comparing models using visualization
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/verification.html">Visualizing Models, Their Difference with Data (Residuals)</a></li>
+									<li>Reading: Visualizing Models, Their Difference with Data (Residuals)</li>
                   <!--									<li>Activity (65 min): <a href="activities/review.html">Code reviews</a></li> -->
 								</ul>
+								Assigned: <a href="#project">Project Milestone 4: Proposal Review</a>. Due Tues 11/7.
 							</td>
 						</tr>
 						<tr>
@@ -340,9 +359,10 @@
 								<ul>
                   <!--									<li>Homework 5 due</li> -->
                   <!--									<li>Lab discussion (5 min)</li> -->
-									<li>Reading <a href="../books/cooperative-software-development/monitoring.html">Example decision-making models</a></li>
+									<li>Reading: Example decision-making models</li>
                   <!--									<li>Homework 6 (80 min): <a href="homeworks/verification.html">Verification plan</a></li> -->
 								</ul>
+								Assigned: <a href="#project">Project Milestone 5: Proposal Revision</a>. Due Sun 11/12.
 							</td>
 						</tr>
 	
@@ -354,9 +374,10 @@
 							<td>
                 Parametric and "non-parametric" models; generalization
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/evolution.html">Fantastic models and where to find them (the internet)</a></li>
+									<li>Reading: Fantastic models and where to find them (the internet)</li>
                   <!--									<li>Activity (80 min): <a href="activities/builds.html">Builds</a></li> -->
 								</ul>
+								Assigned: <a href="#project">Project Milestone 7 & 8: Presentation & Artifact</a>. Due Mon 12/4, Fri 12/8.
 							</td>
 						</tr>
 						<tr >
@@ -377,9 +398,10 @@
 								<ul>
                   <!--									<li>Homework 6 due</li> -->
                   <!--									<li>Lab discussion (5 min)</li> -->
-									<li>Reading: <a href="../books/cooperative-software-development/debugging.html">The model that knew too much</a></li>
+									<li>Reading: The model that knew too much</li>
                   <!--									<li>Midterm (30 min)</li> -->
                   <!--									<li>Homework 7 (50 min): <a href="homeworks/release.html">Release</a></li> -->
+									Assigned: <a href="#project">Project Milestone 6: Project check-in meetings</a>. Due Tues 11/21.
 								</ul>
 							</td>
 						</tr>
@@ -393,7 +415,7 @@
 							<td>
                 Models, bias, and social impacts
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/debugging.html">Investigative journalism on parole recommendation model</a></li>
+									<li>Reading: <a href=#">Investigative journalism on parole recommendation model</a></li>
 								</ul>
 							</td>
 						</tr>
@@ -409,15 +431,13 @@
 						</tr>
 						<tr>
 							<!-- QUARTERLY -->
-							<td>11/22</td><td>Lecture</td>
-							<td>
-                Improving biased models and using models for explanation
-								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/debugging.html">Investigative journalism on parole recommendation model</a></li>
-                  <!--									<li>Lab discussion (5 min)</li> -->
-                  <!--									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li> -->
-								</ul>
-							</td>
+							<td>11/22</td><td></td><td><i>No class</i></td>
+							<!--<td>-->
+                <!--Improving biased models and using models for explanation-->
+								<!--<ul>-->
+									<!--<li>Reading: Investigative journalism on parole recommendation model</li>-->
+								<!--</ul>-->
+							<!--</td>-->
 						</tr>
 	
 						<tr><td colspan=3 class="text-uppercase lead">Week 9 &mdash; Big Data and Opacity </td></tr>
@@ -428,7 +448,7 @@
 							<td>
                 Scaling to "Big Data"
 								<ul>
-									<li>Reading: <a href="../books/cooperative-software-development/debugging.html">Excerpt from Fourth Paradigm; Business Articles on Big Data</a></li>
+									<li>Reading: Excerpt from Fourth Paradigm; Business Articles on Big Data</li>
                   <!--									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li> -->
 								</ul>
 							</td>
@@ -449,9 +469,7 @@
 							<td>
                 Where is your data from - Mediocristan or Extremistan? &amp Problem of Induction
 								<ul>
-                  <li>Reading: <a href="../books/cooperative-software-development/debugging.html">Excerpt from Antifragile and Simulations</a></li>
-                  <!--									<li>Lab discussion (5 min)</li> -->
-                  <!--									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li> -->
+                  <li>Reading: Excerpt from Antifragile and Simulations</li>
 								</ul>
 							</td>
 						</tr>
@@ -492,7 +510,8 @@
 						</tr>
 	
 						<tr><td colspan=3 class="text-uppercase lead">Finals week</td></tr>
-	
+						<td colspan="4">Homework 4 (Project and Course Reflection) Due 12/14. <br/>No class or finals will be held this week.</td>
+
 	
 					</table>
 	
@@ -502,8 +521,8 @@
 					
 					<ul>
 						<li><a href="#activities">Activities</a> (13 points, 0.5 points for each class or lab). Show up and engage to get credit.</li>
-						<li><a href="#reading">Reading</a> (18 points, 1 point each). Prove you read and understood the reading.</li>
-						<li><a href="#homework">Individual Homework</a> (29 points). Prove you understand important data sciencetopics.</li>
+						<li><a href="#reading">Reading</a> (17 points, 1 point each). Prove you read and understood the reading.</li>
+						<li><a href="#homework">Individual Homework</a> (30 points). Prove you understand important data sciencetopics.</li>
 						<li><a href="#project">Project</a> (40 points, <i>team score</i>). Reach several milestones related to your team data science project.</li>
 					</ul>
 										
@@ -558,10 +577,20 @@
 						</tr>
 					</table>					
 		
-					<div class="alert alert-danger">
-						Late work receives no credit unless you can provide a note from a health care professional or provost documenting the reason for your absence.
-						However, you can miss up to 3 activities without penalty and without documentation.
-						This should be enough to allow for sickness, unavoidable travel, or other personal matters.
+					<div class="alert alert-danger" id="late-policy">
+						<p>
+							Late work receives no credit unless you can provide a note from a health care professional or provost documenting the reason for your absence.
+							However, you can miss up to 3 activities without penalty and without documentation.
+							This should be enough to allow for sickness, unavoidable travel, or other personal matters.
+						</p>
+
+						<p>
+							If you miss a reading quiz due to sickness,
+							you can make up the quiz credit by sending a 250-500 word critique of the reading and submitting
+							it to your Google Drive folder within a week of the quiz you missed.
+							Title the Google doc with the class number and "make up quiz".
+							E.g. "2.3 make up quiz" for the make up quiz for week 2 and class 3/wednesday lecture.
+						</p>
 						<!--If you miss a reading quiz due to sickness, you can make up the quiz credit by sending a critique of the reading to me within a week of the due date that reports at least three improvements to the content, including high level issues such as topics that should be discussed or points you think are wrong, to low level issues including spelling, grammar, or clarity.-->
 					</div>
 
@@ -570,10 +599,20 @@
 					<p>Each day in class we'll practice some skill. You'll get <a href="#grading">0.5 points</a> if you engage in and complete the activity. How to get credit for the activity will depend on the activity; sometimes being present will be enough, sometimes being to class on time will be enough, and sometimes you'll have to turn something in.</p>
 					
 					<h2 id="reading">Reading</h2>
-					
+
+					<p>To access the readings, you will do the following:</p>
+
+					<ol>
+						<li>Click on the reading (a link to a Google doc) on the <a href="#schedule">course schedule</a></li>
+						<li>Copy the google doc to your personal INFO 370 folder (which we shared with you at the beginning of the course). <a href="https://support.google.com/docs/answer/49114" target="_blank">Instructions on making a copy of a file in Google Drive.</a></li>
+						<li>Read through the google doc/reading. Highlight and <a href="https://support.google.com/docs/answer/65129" target="_blank">comment</a> any parts which are confusing.</li>
+						<li>Complete the questions marked "TODO".</li>
+					</ol>
+
 					<p>
-						You should complete your readings <i>before</i> at the beginning of each lecture (twice a week).
-						Each time, you'll need to come prepared to discuss the assigned reading.
+						You should complete your readings and reflection <i>before</i> at the beginning of each lecture (twice a week).
+						The Google Doc in your personal Drive folder is your submission (not using Canvas for readings).
+						Each class, you'll come prepared to discuss the assigned reading.
 					</p>
 
 					<p>The day that each reading is due, we'll do the following:</p>
@@ -587,18 +626,31 @@
 						<li>We discuss the correct answers as a class.</li>
 					</ul>
 					
-					<p>Your answer is correct, you'll receive <a href="#grading">1 point</a>. We will give partial credit for partially correct answers, at our discretion.</p>
+					<p>
+						You will receive <a href="#grading">0.5 points</a> for completing the reading and reflection before class (on the Google Doc).
+						You will receive up to another 0.5 points for getting the in-class reading quiz correct.
+						We will give partial credit for partially correct answers on the reading quiz, at our discretion.
+						In total, you can receive up to 1 point per reading.
+					</p>
 
 					<h2 id="homework">Individual Homework</h2>
 
 					<p>There will be a few individual homework assignments which are separate from reading assignments and project milestones.</p>
 
 					<ol>
-						<li><a href="homeworks/TODO">Review of prerequisite knowledge</a> (5 points)</li>
-						<li><a href="homeworks/TODO">Comprehension of data science process</a> (10 points)</li>
-						<li><a href="homeworks/TODO">Assessment of probability</a> (9 points)</li>
-						<li><a href="homeworks/TODO">Project and course reflection</a> (5 points)</li>
+						<li><a href="homeworks/review-prerequisite.html">Review of prerequisite knowledge</a> (5 points). Out Wed 9/27. Due Fri 10/6</li>
+						<li><a href="homeworks/case-study-analysis.html">Analyzing a Data Science Case Study</a> (10 points). Out Wed 10/4. Due <del>Tues 10/10</del> <b>Fri 10/13</b> (updated).</li>
+						<li><a href="homeworks/bayesian.html">Probability with Bayesian Inference</a> (10 points). Out Wed 10/11. Due Tues 10/17.</li>
+						<li>Project and course reflection (5 points). Out Mon 12/11. Due Mon 12/11.</li>
+						<!--<li><a href="homeworks/TODO">Review of prerequisite knowledge</a> (5 points)</li>-->
+						<!--<li><a href="homeworks/TODO">Comprehension of data science process</a> (10 points)</li>-->
+						<!--<li><a href="homeworks/TODO">Assessment of probability</a> (9 points)</li>-->
+						<!--<li><a href="homeworks/TODO">Project and course reflection</a> (5 points)</li>-->
 					</ol>
+
+					<p>
+						All homeworks are due by 11:59:00 PM PST on the specified date.
+					</p>
 
 					<p>
 						The goal of the individual homework assignments is to ensure you an understanding of specific concepts which are critical to your understanding of data science.
@@ -608,26 +660,61 @@
 
 					<!--<p>The midterm will consist entirely of true/false questions. (Fun!) Your final points will be <code>12 x fraction_correct</code>. Also note that any questions that more than 60% of students in the class get wrong will be excluded from the final score as they were likely confusing or concerned material that I poorly taught.</p>-->
 	
-					<h2 id="project">Project</h2> <!--TODO: update points for each milestone-->
+					<h2 id="project">Project</h2>
 					
-					<p>The project is split across 7 milestones/assignments, each worth a different amount:</p> <!--TODO: update number of assignments-->
+					<p>The project is split across 8 milestones/assignments, each worth a different amount:</p> <!--TODO: update number of assignments-->
 					
 					<ol>
-						<li><a href="project/group-formation.html">Group formation and initial questions</a> (2 points)</li>
-						<li><a href="homeworks/TODO">Feasibility analysis</a> (4 points)</li>
-						<li><a href="homeworks/TODO">Proposal</a> (6 points)</li>
-						<li><a href="homeworks/TODO">Proposal meeting</a> (2 points)</li>
-						<li><a href="homeworks/TODO">Project check-in meeting</a> (2 points)</li>
-						<li><a href="homeworks/TODO">Presentation</a> (10 points)</li>
-						<li><a href="homeworks/TODO">Artifact</a> (14 points)</li>
+						<li>Group formation and initial questions (2 points). Out Wed 10/18. Due Sun 10/22.</li>
+						<li>Feasibility analysis (3 points). Out Mon 10/23. Due Sun 10/29.</li>
+						<li>Proposal (4 points). Out Mon 10/30. Due Sun 11/5.</li>
+						<li>Proposal Review (2 points). Out Mon 11/6. Due Tues 11/7.</li>
+						<li>Proposal Revision (3 points). Out Wed 11/8. Due Sun 11/12.</li>
+						<li>Project check-in meeting (2 points). Out Wed 11/16. Due Tues 11/21.</li>
+						<li>Presentation (10 points). Out Mon 11/13. Due Mon 12/4.</li>
+						<li>Artifact (14 points). Out Mon 11/13. Due Fri 12/8.</li>
 					</ol>
-					
+					<p>
+						All assignments except the Project check-in meeting are due by 11:59:00 PM PST on the specified date.
+					</p>
+
 					<p>
 						The goal of the project is for you to practice the process of data science to make or inform a decision,
 						so you can experience the nuances of formulating a good question, setting up process, constraints, and plans in relation to a context. Note, however, that because the timeline for the project is so short, it <em>won't</em> give you a deep, longitudinal experience with software engineering, nor will it give you practice with massive complexity or scale. I believe these are experiences best left to practice in industry, as they're <em>very</em> difficult to replicate in the artificial setting of school.</p>
 					
 					<p>Note that in the final three weeks of the course, we'll use class time primarily for team meeting time. The TA and I will be available as free consultants, helping you debug, do research on libraries, and offer advice on implementation. You are not required to come to class those days, but I highly recommend using the time for team coordination and help.</p>
-					
+
+
+					<h2 id="resources">Resources</h2>
+
+					<p>
+						Links to Data Science communities at/near UW:
+					</p>
+
+					<ul>
+						<li>
+							<a href="misc/eScience-education-brochure.pdf" target="_blank">Data Science Education at UW</a></li>
+						</li>
+						<li>
+							<a href="http://escience.washington.edu/" target="_blank">UW eScience Institute</a>: cross-disciplinary community of researchers thinking about data science.
+							They often have <a href="http://escience.washington.edu/escience-events/" target="_blank">events</a> open to students and the public.
+						</li>
+						<li>
+							<a href="https://www.seattledataforgood.org/" target="_blank">Seattle Data for Good</a>:
+							A citizen service organization dedicated to supporting data science related needs of local civic organizations.
+							Benji Xie is the head of the <a href="http://benjixie.com/sdfg" target="_blank">Education Co-op</a>, dedicated to developing a community of learners within the organization.
+						</li>
+					</ul>
+
+					<p>
+						Links to important UW resources:
+					</p>
+
+					<ul>
+						<li><a href="http://hr.uw.edu/dso/" target="_blank">Disability Services Office</a>: If you require disability accommodations for this course, work with the DSO.</li>
+						<li><a href="https://depts.washington.edu/safecamp/" target="_blank">SafeCampus</a>: Resources and points of contact to promote a safer UW community.</li>
+					</ul>
+
 				</div>
 			</div>		
 		</div>
